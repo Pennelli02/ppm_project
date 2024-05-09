@@ -1,0 +1,383 @@
+.btn-primary{
+    background-color: black;
+    border-color: transparent;
+
+}
+.btn-primary:focus, .btn-primary:active{
+    background-color: red !important;
+    box-shadow: red;
+    border-color: red !important;
+}
+.btn-primary:hover{
+    background-color: red;
+    border-color: red;
+}
+h5{
+    font-style: italic;
+
+}
+.modal-content>*{
+    text-align: center;
+}
+#subscribe\ button{
+    background-color: red;
+    color: white;
+    border-color: transparent;
+}
+.modal-header{
+    background-color: #052c65;
+    color: white;
+}
+.modal-title{
+    text-align: center;
+    margin: auto;
+}
+a, .btn-link{
+    color: gray;
+    text-decoration: none;
+}
+.btn-link:focus, .btn-link:active{
+    color: red;!important;
+    box-shadow: none;
+    background-color: transparent;!important;
+}
+.Icon{
+    border-color: transparent;
+    background-color: transparent;
+}
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-item:hover{
+    background-color: red;
+    border-color: red;
+    color: white;
+}
+.navbar .btn.dropdown-toggle {
+    color: white;
+}
+.navbar .nav-link{
+    color: white;
+}
+.offcanvas{
+    background-color: red;
+}
+#closeButtonLeft{
+    position: absolute;
+    top: 8px;
+    left: 0;
+    padding: .5rem;
+
+}
+.offcanvas-header{
+    height: 2px;
+}
+body{
+    padding-top: 8px;
+}
+.btn-link:hover{
+    color: red;
+}
+.show-on-scroll .btn-link{
+    background-color: white;
+}
+.show-on-scroll .btn-link:hover{
+    color: gray;
+}
+.show-on-scroll .btn-primary:hover{
+    background-color: black;
+}
+.form-control{
+    height: 36px;
+    padding: 2px 40px 4px 16px;
+    border-radius: 36px;
+    width: 100%;
+    border: 1px solid #aaa;
+    color: #222;
+
+}
+.btn-outline-success {
+   line-height: 36px;
+    right: 0;
+    top: 0;
+    position: absolute;
+    appearance: none;
+    margin: 0;
+    background: transparent;
+    border: 0;
+    padding: 0 30px 0 0;
+    outline: none;
+
+}
+button.btn.btn-outline-success:active,
+button.btn.btn-outline-success:focus {
+    background-color: transparent !important;
+    box-shadow: none;
+    color: #842029;
+}
+.btn-outline-success:hover{
+    background-color: transparent;
+    color: #842029;
+}
+
+
+.offcanvas-body .btn-outline {
+    background-color: transparent;
+    border-color: transparent;
+    margin-top: 5px;
+    color: white;
+
+}
+.offcanvas-body .btn-outline:active, .offcanvas-body .btn-outline:focus{
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+.zoneButton{
+    border-bottom-color: white;
+}
+.searchContainer{
+    width: 100%;
+}
+form{
+    position: relative;
+}
+.offcanvas-body{
+     margin-left: 20px;
+ }
+.offcanvas-body .listaBottoniCollaspe .zoneButton{
+    border-bottom: 1px solid white;
+}
+.offcanvas-body .listaBottoniCollaspe .zoneButton .card{
+    background-color: transparent;
+    border-color: transparent;
+}
+.offcanvas-body .listaBottoniCollaspe .zoneButton .card a{
+    color: white;
+}
+.navbar-toggler, .brandZone{
+    float: left;
+}
+.show-on-scroll {
+    display: none;
+}
+.navbar-brand, .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active{
+    color: white;
+    /*font-family; da cercare*/
+}
+#closeButtonRight, #closeButtonRight:hover{
+    background-color: transparent;
+    border-color: transparent;
+}
+#offcanvasRight{
+    width: 250px;
+}
+#offcanvas{
+ width: 350px;
+}
+.loginSection .ButtonPlace .btn-outline{
+    border-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+}
+.loginSection .ButtonPlace .btn-outline:hover{
+    border-color: white;
+    color: white;
+}
+.offcanvas-body .linkSection .linkSpace{
+    width: 100%;
+    margin: 16px 0;
+}
+.linkSection .linkSpace{
+    background-color: transparent;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 8px;
+    color: white;
+}
+.linkSection .linkSpace:hover{
+    border-bottom-color: white;
+}
+.linkSection .linkSpace a{
+    color: white;
+}
+.PodcastSection{
+    background-color: #e8eaed;
+}
+.articleTitle, .imagePlace{
+    display: inline-block;
+}
+.podcastItem span{
+    display: block;
+    color: gray;
+
+}
+.podcastContainer{
+    width: 1200px;
+}
+.podcastItem{
+    padding: 10px;
+}
+.articleTitle{
+    position: relative;
+    top: 10px;
+}
+.articleTitle a{
+    color: black;
+
+}
+main{
+    padding-top: 20px;
+}
+.topics{
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 200px;
+}
+.topics>*{
+    display: inline;
+}
+.topics .trendingElement{
+    padding: 0 5px;
+    border-left: 1px solid #222;
+}
+.topics #noBorder {
+    border-left: 0;
+}
+.trendingElement a{
+    color: black;
+}
+.trendingElement a:hover{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+#centralColumn{
+    border-left: 3px solid #e8eaed;
+    border-right: 3px solid #e8eaed;
+}
+.detailsNews, .detailsQuiz{
+    height: 85px;
+    padding: 10px;
+}
+.detailsNews h6 a:hover, .detailsQuiz h6 a:hover{
+    color: darkred;
+}
+.detailsNews h6 a, .detailsQuiz h6 a{
+    color: black;
+}
+.breakingNews, .Quiz{
+    margin-bottom: 16px;
+}
+.breakingNewsBlock{
+    margin-bottom: 50px;
+}
+.mostPopularBlock{
+    margin-bottom: 13px;
+}
+.blockTitle{
+    background-image: linear-gradient(90deg, #9ea7b3 30%, #fff);
+    text-shadow: 0 0 9px rgba(0, 0, 0, .4);
+    color: #fff;
+    border-bottom: 0;
+    padding: 4px 12px;
+    margin: 0 0 16px;
+    font-size: 20px;
+}
+ .blockContent .storyItem{
+    margin: 2rem 0;
+}
+.storyItem-headline{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ .blockContent a{
+    font-size: 16px;
+    color: black;
+}
+.blockContent a:hover{
+    color: darkred;
+}
+.byTheNumbersBlock .blockImage p, .videoContent .videoSection p {
+    text-align:end;
+    font-size: 13px;
+    font-weight: 700;
+}
+.byTheNumbersBlock .blockImage p a, .videoContent .videoSection p a{
+    color: black;
+    padding-right: 5px;
+}
+.byTheNumbersBlock .blockImage p a:hover, .videoContent .videoSection p a:hover{
+    text-decoration: underline;
+}
+.byTheNumbersBlock{
+    margin-bottom: 50px;
+}
+ .itemTitle{
+    font-size: 14px;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.itemTitle a{
+    color: darkred;
+}
+.socialPlace .title{
+    margin-right: auto;
+}
+.socialPlace{
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    align-items: end;
+    gap: 8px;
+}
+.socialPlace:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.socialPlace a{
+    float: right;
+    margin-right: 6px;
+}
+.rightColumn .searchContainer .btn-outline-success{
+    padding: 0 16px 0 0;
+}
+.videoSection{
+    margin-top: 12px;
+}
+.videoSection p{
+    text-align: right;
+}
+.commentaryContainer .blockTitle a{
+    color: #fff;
+}
+.commentaryContainer .blockTitle a:hover{
+    text-decoration: white underline;
+}
+.articleHead{
+    font-size: 18px;
+    border-bottom: 1px solid #e8eaed;
+    margin-bottom: 8px;
+}
+.articleHead a, .storyDetails p a{
+    color: black;
+}
+.articleHead a:hover, .storyDetails p a:hover{
+    color: darkred;
+}
+.storyDetails p{
+    font-weight: 700;
+}
+.commentaryItem{
+    margin-bottom: 25px;
+}
+.information{
+    font-size: 14px;
+    display: block;
+    text-align: right;
+    padding: 0 0 16px;
+    margin-top: 8px;
+    color: black;
+}
+.information:hover{
+    color: #842029;
+}
