@@ -1,3 +1,8 @@
+body{
+    font-family: Literata, serif;
+    font-weight: 400;
+    color:black;
+}
 .btn-primary{
     background-color: black;
     border-color: transparent;
@@ -253,15 +258,18 @@ main{
     border-left: 3px solid #e8eaed;
     border-right: 3px solid #e8eaed;
 }
-.detailsNews, .detailsQuiz{
+.detailsNews, .detailsQuiz, .detailsReaction, .detailsSpot, .detailsOpinion, .detailsStory, .detailsMyTimes, .detailsCulture, .detailsThreat, .detailsPolitics, .detailsHigh, .detailsCampaign, .detailsDive, .detailsNational, .detailsWorld, .detailsSport, .detailsPodcast, .detailsSponsor{
     height: 85px;
     padding: 10px;
 }
-.detailsNews h6 a:hover, .detailsQuiz h6 a:hover{
+.detailsNews h6 a:hover, .detailsQuiz h6 a:hover, .detailsStory h6 a:hover, .detailsCulture h6 a:hover, .detailsThreat h6 a:hover, .detailsPolitics h6 a:hover, .detailsHigh h6 a:hover, .detailsCampaign h6 a:hover, .detailsDive h6 a:hover, .detailsNational h6 a:hover, .detailsWorld h6 a:hover, .detailsSport h6 a:hover, .detailsPodcast h6 a:hover, .detailsSponsor h6 a:hover, .detailsMoreStories h6 a:hover{
     color: darkred;
 }
-.detailsNews h6 a, .detailsQuiz h6 a{
+.detailsNews h6 a, .detailsQuiz h6 a, .reactionItem h6 a , .detailsSpot h6 a, .detailsOpinion h6 a, .detailsStory h6 a, .detailsMyTimes h6 a, .detailsCulture h6 a, .detailsThreat h6 a, .detailsPolitics h6 a, .detailsHigh h6 a, .detailsCampaign h6 a, .detailsDive h6 a, .detailsNational h6 a, .detailsWorld h6 a, .detailsSport h6 a, .detailsPodcast h6 a, .detailsSponsor h6 a, .detailsMoreStories h6 a{
     color: black;
+}
+.detailsPodcast h6 a{
+    font-weight: 700;
 }
 .breakingNews, .Quiz{
     margin-bottom: 16px;
@@ -329,7 +337,7 @@ main{
     align-items: end;
     gap: 8px;
 }
-.socialPlace:after{
+.socialPlace:after .related:after{
     content: "";
     display: table;
     clear: both;
@@ -347,16 +355,20 @@ main{
 .videoSection p{
     text-align: right;
 }
-.commentaryContainer .blockTitle a{
+.blockTitle a{
     color: #fff;
 }
-.commentaryContainer .blockTitle a:hover{
+.blockTitle a:hover{
     text-decoration: white underline;
 }
 .articleHead{
     font-size: 18px;
     border-bottom: 1px solid #e8eaed;
     margin-bottom: 8px;
+}
+.leadStory .articleHead{
+    font-size: 28px;
+    font-weight: 700;
 }
 .articleHead a, .storyDetails p a{
     color: black;
@@ -380,4 +392,359 @@ main{
 }
 .information:hover{
     color: #842029;
+}
+.commentaryContainer, .mediaSpotlightPlace, .cartoonPlace, .polPlace{
+    margin-bottom: 30px;
+}
+.detailsReaction span a, .detailsSpot span a, .detailsOpinion span a, .meta span a, .relatedItems ul li a, .detailsStory span a, .detailsCulture span a , .detailsThreat span a, .detailsPolitics span a, .detailsHigh span a, .detailsCampaign span a, .detailsNational span a, .detailsWorld span a, .detailsSport span a, .detailsMoreStories span a{
+    color: #0d6efd;
+}
+.reactionItem, .spotItem, .opinionItem, .topStoryItem {
+    margin-bottom: 40px;
+}
+.homeOpinionZone{
+    margin-bottom: 80px;
+}
+.polContent h3{
+    font-size: 18px;
+}
+.polContent form{
+    margin-left: 30px;
+}
+.polContent form .form-check .form-check-input{
+    width: 0.75rem;
+    height: 0.75rem;
+}
+.polContent form button{
+    height: 32px;
+    padding: 0 24px;
+    margin: 5px 0 20px;
+    background-color: #a9091f;
+    font-weight: 600;
+    font-size: 16px;
+}
+.polContent form button:hover{
+    background-color: #a9091f;
+    border-color: #a9091f;
+}
+.polContent form a{
+    color: #0d6efd;
+    font-size: 14px;
+}
+.polContent form a:hover{
+    text-decoration: underline #0d6efd;
+}
+.photoGalleryPlace p a{
+    font-size: 14px;
+    color: black;
+    font-weight: 700;
+}
+.photoGalleryPlace p a:hover{
+    text-decoration: underline;
+}
+.photoGalleryPlace  p{
+    color: #842029;
+    font-size: 10px;
+    font-weight: 500;
+}
+.photoGalleryPlace{
+    margin-bottom: 80px;
+}
+.paperDetails .itemTitle a{
+    color: black;
+}
+.paperDetails .itemTitle a:hover{
+    color: #842029;
+}
+.mainContent{
+   border-bottom:  3px solid #e8eaed;
+}
+.leadStory{
+    border-bottom: 1px solid #e8eaed;
+    margin-bottom: 16px;
+}
+.leadStory .articleHead{
+    font-size: 28px;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    border-bottom: none;
+}
+.premiumTag, .exclusiveTag, .newsletterTag, .commentaryTag{
+    font-size: 10px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.3em;
+    padding: 3px 5px;
+    background-color: #a9091f;
+}
+.meta{
+    font-style: normal;
+    font-weight: 400;
+    color: #555f6d;
+    margin: 8px 0;
+    font-size: 13px;
+}
+.meta span a:hover, .relatedItems ul li a:hover, .detailsStory span a:hover, .detailsCulture span a:hover, .detailsThreat span a:hover, .detailsPolitics span a:hover, .detailsHigh span a:hover, .detailsCampaign span a:hover, .detailsNational span a:hover, .detailsWorld span a:hover, .detailsSport span a:hover, .detailsMoreStories span a:hover{
+    color: #555f6d;
+    text-decoration: underline #555f6d;
+}
+.leadStory .articleText .text p{
+    font-size: 16px;
+    color: #3e3e3e;
+    margin: 0 0 1.6em;
+
+}
+.related h5{
+    font-weight: 400;
+    width: 65px;
+    color: #5b5b5b;
+    margin: 0;
+    padding-right: 10px;
+    font-size: 14px;
+}
+.relatedItems{
+    border-left: 1px solid #e8eaed;
+    padding-left: 10px;
+}
+.relatedItems ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.relatedItems ul li {
+    margin-left: 0;
+    margin-bottom: 12px;
+    padding-left: 20px;
+}
+.exclusiveTag{
+    background-color: #004999;
+}
+.newsletterTag{
+    background-color: black;
+}
+.commentaryTag{
+    background-color: gray;
+}
+.topStoryItem{
+   margin-bottom: 0;
+    border-bottom: 1px solid #e8eaed;
+    padding-bottom: 30px;
+    padding-top: 16px;
+}
+.top-news:last-child{
+    margin-bottom: 0;
+}
+.top-news{
+    border-bottom: 5px solid #e8eaed;
+}
+.sectionTitle{
+    margin-top: 20px;
+    border-bottom: #842029 solid 1px;
+    position: relative;
+    margin-bottom: 16px;
+}
+.sectionTitle span{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.sectionTitle h4 a{
+    color: #b00021;
+    font-size: 18px;
+    font-weight: 700;
+}
+.sectionTitle h4 a:last-child{
+    color: black;
+}
+.detailsMyTimes h6 a:hover{
+    text-decoration: underline;
+}
+.myTimesBody .row{
+margin-bottom: 12px;
+}
+.myTimesSection{
+    border-bottom: 5px solid #e8eaed;;
+}
+.first h6{
+    font-weight: 700;
+    font-size: 20px;
+}
+.cultureArticle, .threatArticle, .politicsArticle, .highArticle, .campaignArticle, .diveDeeperArticle, .nationalArticle, .worldArticle, .sportArticle, .podcastArticle, .moreStoriesArticle{
+    border-bottom: 1px solid #e8eaed;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    padding-top: 16px;
+
+}
+.last{
+    border-bottom: none;
+}
+.threatStatusSection .sectionTitle, .higherGroundSection .sectionTitle{
+    border-bottom: #054f65 solid 1px;
+    margin-bottom: 0;
+}
+.threatStatusSection .sectionTitle h4 a{
+    font-size: 25px;
+    color: #052c65;
+
+}
+.threatStatusSection .sectionTitle h4 a:last-child{
+    color: white;
+    background-color: darkred;
+    font-weight: 700;
+    padding-right: 8px;
+}
+.threatStatusSection .bodyInformation, .higherGroundSection .bodyInformation{
+    background-color: #eaf0f3;
+}
+.higherGroundSection .sectionTitle h4 a{
+    color: #0a53be;
+    font-size: 30px;
+}
+.spotItem, .reactionItem{
+    padding-bottom: 16px;
+}
+.sponsoredContentSection .sectionTitle{
+    margin-bottom: 8px;
+}
+.sponsorArticle .articleTitle h6{
+    color: darkred;
+    padding-bottom: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+#preFooter{
+    padding: 20px 0 8px;
+}
+.header{
+    margin: 15px 0 10px;
+}
+.preFooterHeading{
+    background-image: linear-gradient(90deg, #9ea7b3, #fff);
+    text-shadow: 0 0 9px rgba(0, 0, 0, .4);
+    color: #fff;
+    font-size: 20px;
+    height: 47px;
+    line-height: 47px;
+    padding-left: 92px;
+    position: relative;
+}
+.preFooterHeading img{
+    position: absolute;
+    left: 10px;
+    top: -15px;
+}
+.fitText{
+    font-size: 18px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+#preFooter .leadStory{
+    border-top: none;
+    margin-top: 0;
+    border-bottom: 1px solid #e8eaed;
+}
+#preFooter .leadStory h4{
+    font-size: 14px;
+    font-weight: 700;
+}
+#preFooter h4 a, #preFooter h3 a{
+    color: black;
+}
+#preFooter article{
+    margin-top: 16px;
+}
+#preFooter h4 {
+    font-size: 14px;
+    font-weight: 400;
+}
+#preFooter section {
+    overflow: hidden;
+}
+#preFooter h4 a:hover, #preFooter h3 a:hover{
+    text-decoration: underline;
+}
+.content .row{
+    margin-bottom: 25px;
+}
+.content{
+    padding-top: 16px;
+}
+#footer{
+    border-top: 1px solid #dde0e4;
+    background-color: #e8eaed;
+    padding-bottom: 16px
+}
+#contactLinks{
+    padding-top: 30px;
+}
+#footer section{
+    margin-bottom: 20px;
+    padding-left: 30px;
+}
+section h3, .contentSection h3 a{
+    color: #b00021;
+    font-size: 18px;
+    line-height: 1.33em;
+    margin: 0
+}
+.contentSection h3 a:hover{
+    text-decoration: underline;
+}
+.links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.links li{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+.links a{
+    color: black;
+}
+.links a:hover{
+    text-decoration: underline;
+}
+.contentSection{
+    margin-bottom: 30px;
+}
+#footerNav{
+    padding: 20px 0;
+    margin: 64px 0 32px;
+}
+#footerNav .menu {
+    text-align: center;
+    gap: 16px 0;
+}
+.menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu li{
+    display: inline-block;
+}
+#footerNav a{
+    color: #b00021;
+    font-size: 16px;
+    line-height: 1;
+    display: block;
+    padding: 0 8px;
+    font-weight: 700;
+}
+#footerNav a:hover{
+    text-decoration: underline;
+}
+#copyright{
+    margin: 0;
+    padding: 16px 0;
+    font-weight: 400;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+}
+#copyright .info{
+    display: block;
 }
