@@ -779,3 +779,27 @@ section h3, .contentSection h3 a{
 #copyright .info{
     display: block;
 }
+.articleVisibleOnlyMobile{
+    background-image: url("https://placehold.co/1200x670");
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    
+}
+.textArticle{
+    position: absolute;
+    bottom: 0;
+    padding-left: 8px;
+}
+.textArticle h2 a{
+    color: white;
+    font-weight: 700;
+}
+.metaArticle span, .metaArticle span a{
+    color: white;
+}
+.metaArticle span a:hover{
+    text-decoration: underline;
+}
