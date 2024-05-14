@@ -3,10 +3,17 @@ body{
     font-weight: 400;
     color:black;
 }
+.logo{
+    text-align: center;
+}
+.textLogo{
+    width: 500px;
+}
 .btn-primary{
     background-color: black;
     border-color: transparent;
-
+    border-radius: 3px;
+    font-size: 16px;
 }
 .btn-primary:focus, .btn-primary:active{
     background-color: red !important;
@@ -17,9 +24,14 @@ body{
     background-color: red;
     border-color: red;
 }
+.nav-item .btn-primary{
+  padding: 8px;
+
+}
 h5{
     font-style: italic;
-
+    font-size: 18px;
+    color: black;
 }
 .modal-content>*{
     text-align: center;
@@ -45,14 +57,31 @@ a, .btn-link{
     color: red;!important;
     box-shadow: none;
     background-color: transparent;!important;
+
+}
+.nav-item .btn-link{
+    padding: 8px;
+    border-radius: 1px;
+    font-size: 16px;
 }
 .Icon{
     border-color: transparent;
     background-color: transparent;
 }
+.bg-danger{
+    background-color: #a9091f !important;
+}
+.navbar{
+    --bs-navbar-padding-x: none;
+}
 .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
 }
+.navbar-toggler:focus, .navbar-toggler:active{
+    box-shadow: none;
+    background-color: transparent;!important;
+}
+
 .dropdown-item:hover{
     background-color: red;
     border-color: red;
@@ -168,7 +197,6 @@ form{
 }
 .navbar-brand, .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active{
     color: white;
-    /*font-family; da cercare*/
 }
 #closeButtonRight, #closeButtonRight:hover{
     background-color: transparent;
@@ -259,7 +287,6 @@ main{
     border-right: 3px solid #e8eaed;
 }
 .detailsNews, .detailsQuiz, .detailsReaction, .detailsSpot, .detailsOpinion, .detailsStory, .detailsMyTimes, .detailsCulture, .detailsThreat, .detailsPolitics, .detailsHigh, .detailsCampaign, .detailsDive, .detailsNational, .detailsWorld, .detailsSport, .detailsPodcast, .detailsSponsor{
-    height: 85px;
     padding: 10px;
 }
 .detailsNews h6 a:hover, .detailsQuiz h6 a:hover, .detailsStory h6 a:hover, .detailsCulture h6 a:hover, .detailsThreat h6 a:hover, .detailsPolitics h6 a:hover, .detailsHigh h6 a:hover, .detailsCampaign h6 a:hover, .detailsDive h6 a:hover, .detailsNational h6 a:hover, .detailsWorld h6 a:hover, .detailsSport h6 a:hover, .detailsPodcast h6 a:hover, .detailsSponsor h6 a:hover, .detailsMoreStories h6 a:hover{
@@ -476,6 +503,10 @@ main{
     line-height: 1.3em;
     padding: 3px 5px;
     background-color: #a9091f;
+}
+.storyTag{
+    margin: 0;
+    padding: 0;
 }
 .meta{
     font-style: normal;
