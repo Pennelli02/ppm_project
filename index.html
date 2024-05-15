@@ -1260,22 +1260,16 @@
                             </div>
                         </div>
                     </article>
-                    <article class="d-flex d-md-none sponsorArticle">
-                        <div class="articleTitle">
+                    <div class="d-flex d-md-none articleTitle">
                             <h6>Lorem ipsum dolor sit amet</h6>
                         </div>
-                        <div class="articleVisibleOnlyMobile">
-                            <div class="textArticle">
-                                <h2>
-                                    <a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-                                </h2>
-                                <div class="metaArticle">
-                                <span> By <a href="#">Lorem ipsum</a></span>
-                                <span class="resource">- source</span>
-                            </div>
+                    <article class="d-flex d-md-none articleVisibleOnlyMobile">
+                        <div class="textArticle">
+                            <h2>
+                                <a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                            </h2>
                         </div>
-                    </div><!--articolo visibile solo quando siamo su mobile\tablet-->
-                    </article>
+                    </article><!--articolo visibile solo quando siamo su mobile\tablet-->
                     <article class="sponsorArticle">
                         <div class="articleTitle">
                             <h6>Lorem ipsum dolor sit amet</h6>
@@ -1320,7 +1314,7 @@
                     <div class="sectionTitle">
                         <h4><a href="#">MORE STORIES</a><a href="#"></a></h4>
                     </div>
-                    <article class=" moreStoriesArticle first">
+                    <article class=" d-none d-md-block moreStoriesArticle first">
                         <div class="row">
                             <div class="col-auto mStImage">
                                 <a href="#"><img src="https://placehold.co/166x97"></a>
@@ -1331,6 +1325,17 @@
                             </div>
                         </div>
                     </article>
+                    <article class="d-flex d-md-none articleVisibleOnlyMobile">
+                        <div class="textArticle">
+                            <h2>
+                                <a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+                            </h2>
+                            <div class="metaArticle">
+                                <span> By <a href="#">Lorem ipsum</a></span>
+                                <span class="resource">- source</span>
+                            </div>
+                        </div>
+                    </article><!--articolo visibile solo quando siamo su mobile\tablet-->
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
@@ -1566,7 +1571,7 @@
             </div><!--colonna centrale-->
             <div class="col-md-4 col-lg-3 order-lg-1" id="leftColumn">
                 <aside>
-                    <section class="breakingNewsBlock">
+                    <section class="d-none d-md-block breakingNewsBlock">
                         <article class="breakingNews">
                             <div class="row breakingNewsElement">
                                 <div class="col-auto newsImage">
@@ -1620,7 +1625,10 @@
                     </section><!--sezione breakingNews FIX ME responsività-->
                     <!--in teoria qui c'è la sezione delle pubblicità che non so se devo metterla quindi faccio finta che non esista-->
                     <section class="mostPopularBlock">
-                        <h2 class="blockTitle">MOST POPULAR</h2>
+                        <h2 class="d-none d-md-block blockTitle">MOST POPULAR</h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">MOST POPULAR</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <div class="blockContent">
                             <article class="storyItem-headline">
                                 <a class="articleText" href="#"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit.</strong></a>
@@ -1640,7 +1648,10 @@
                         </div>
                     </section><!--sezione most important FIX ME responsività-->
                     <section class="byTheNumbersBlock">
-                        <h2 class="blockTitle">BY THE NUMBERS</h2>
+                        <h2 class="d-none d-md-block blockTitle">BY THE NUMBERS</h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">BY THE NUMBERS</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <div class="blockImage">
                             <a href="#">
                                 <img src="https://placehold.co/1150x670" class="img-fluid">
@@ -1652,7 +1663,10 @@
 
                     </section><!--sezione by the numbers FIX ME responsività-->
                     <section class="columnsBlock">
-                        <h2 class="blockTitle">COLUMNS</h2>
+                        <h2 class="d-none d-md-block blockTitle">COLUMNS</h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">COLUMNS</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <div class="blockContent">
                             <article class="storyItem-headline">
                                 <h3 class="itemTitle"><a href="#">Title</a></h3>
@@ -1669,7 +1683,10 @@
                         </div>
                     </section><!--sezione columns FIX ME resposnsività-->
                     <section class="latestQuizBlock">
-                        <h2 class="blockTitle"><a href="#">LATEST QUIZ</a></h2>
+                        <h2 class="d-none d-md-block blockTitle"><a href="#">LATEST QUIZ</a></h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">LATEST QUIZ</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <article class="Quiz">
                             <div class="row quizItem">
                                 <div class="col-auto newsImage">
@@ -1734,7 +1751,7 @@
                             </p>
                         </div>
                     </section><!--sezione video-->
-                    <section class="commentaryContainer">
+                    <section class="d-none d-md-block commentaryContainer">
                         <h2 class="blockTitle"><a href="#">COMMENTARY</a></h2>
                         <article class="commentaryItem">
                             <div class="row">
@@ -1763,7 +1780,10 @@
                         </p>
                     </section><!--commentary-->
                     <section class="rapidReactionsZone">
-                        <h2 class="blockTitle"><a href="#">RAPID REACTION</a></h2>
+                        <h2 class="d-none d-md-block blockTitle"><a href="#">RAPID REACTION</a></h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">RAPID REACTION</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <article class="reactionItem">
                             <div class="row">
                                 <div class="col-auto reactionImage">
@@ -1794,7 +1814,10 @@
                         </p>
                     </section><!--Rapid Reactions-->
                     <section class="mediaSpotlightPlace">
-                        <h2 class="blockTitle"><a href="#">MEDIA SPOTLIGHT</a></h2>
+                        <h2 class="d-none d-md-block blockTitle"><a href="#">MEDIA SPOTLIGHT</a></h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">MEDIA SPOTLIGHT</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <article class="spotItem">
                             <div class="row">
                                 <div class="col-auto spotImage">
@@ -1836,7 +1859,10 @@
                         </p>
                     </section><!--media spotlight place-->
                     <section class="homeOpinionZone">
-                        <h2 class="blockTitle"><a href="#">COMMENTARY</a></h2>
+                        <h2 class="d-none d-md-block blockTitle"><a href="#">COMMENTARY</a></h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">COMMENTARY</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <article class="opinionItem">
                             <div class="row">
                                 <div class="col-auto opinionImage">
@@ -1894,7 +1920,10 @@
                         </article>
                     </section><!--homeOpinion/Commentary-->
                     <section class="cartoonPlace">
-                        <h2 class="blockTitle"><a href="#">LATEST CARTOON</a></h2>
+                        <h2 class="d-none d-md-block blockTitle"><a href="#">LATEST CARTOON</a></h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">LATEST CARTOON</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <div class="blockImage">
                             <a href="#">
                                 <img src="https://placehold.co/1200x680" class="img-fluid">
@@ -1902,7 +1931,10 @@
                         </div>
                     </section><!--cartoonPlace-->
                     <section class="polPlace">
-                        <h2 class="blockTitle">QUESTION OF THE DAY</h2>
+                        <h2 class="d-none d-md-block blockTitle">QUESTION OF THE DAY</h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">QUESTION OF THE DAY</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <div class="polContent">
                             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
                             <form action="#" method="post">
@@ -1924,7 +1956,10 @@
                         </div>
                     </section><!--zona sondaggio-->
                     <section class="photoGalleryPlace">
-                        <h2 class="blockTitle">PHOTO GALLERY</h2>
+                        <h2 class="d-none d-md-block blockTitle">PHOTO GALLERY</h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">PHOTO GALLERY</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <div class="blockImage">
                             <a href="#">
                                 <img src="https://placehold.co/1200x700" class="img-fluid">
@@ -1934,7 +1969,7 @@
                         <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Nunc velit neque,</a> 8 photos
                         </p>
                     </section><!--Photo Gallery-->
-                    <section class="paperPlace">
+                    <section class="d-none d-md-block paperPlace">
                         <h2 class="blockTitle">TODAY'S PAPER</h2>
                         <article class="paperItem">
                             <div class="row">
@@ -1953,8 +1988,11 @@
                         </article>
                     </section><!--Paper-->
                     <section class="audioSection">
-                    <h2 class="blockTitle">FRONT PAGE PODCAST</h2>
-                    <img src="https://placehold.co/1200x700?text=AUDIO+SPACE" class="img-fluid ">
+                        <h2 class="d-none d-md-block blockTitle">FRONT PAGE PODCAST</h2>
+                        <div class="d-flex d-md-none sectionTitle">
+                            <h4><a href="#">FRONT PAGE PODCAST</a><a href="#"></a></h4>
+                        </div><!--cambio titolo che avviene al con il cambio di dimensione-->
+                        <img src="https://placehold.co/1200x700?text=AUDIO+SPACE" class="img-fluid ">
                 </section> <!--non saprei come importare l'audio-->
                 </aside>
             </div><!--colonna di destra FIX ME-->
@@ -1962,7 +2000,7 @@
     </div><!--main FIX ME responsività-->
 </main><!--FIX ME-->
 <div class="container-md footersContainers">
-    <footer id="preFooter">
+    <footer class="d-none d-md-block" id="preFooter">
         <div class="containerMoreNews">
             <div class="header">
                 <h2 class="preFooterHeading">
@@ -2328,7 +2366,7 @@
                 </section>
             </div>
         </div>
-        <div id="contentLinks">
+        <div class="d-none d-md-block" id="contentLinks">
             <div class="row">
                 <section class="col sectionLinks">
                     <div class="contentSection">
@@ -2673,7 +2711,7 @@
                 </section>
             </div>
         </div>
-        <div id="footerNav">
+        <div class="d-none d-md-block" id="footerNav">
             <ul class="menu">
                 <li>
                     <a href="#">Subscribe</a>

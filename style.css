@@ -94,7 +94,7 @@ a, .btn-link{
     color: white;
 }
 .offcanvas{
-    background-color: red;
+    background-color: #a9091f;
 }
 #closeButtonLeft{
     position: absolute;
@@ -803,3 +803,9 @@ section h3, .contentSection h3 a{
 .metaArticle span a:hover{
     text-decoration: underline;
 }
+.articleTitle h6{
+     color: darkred;
+     font-weight: 700;
+     font-size: 20px;
+     text-transform: uppercase;
+ }
