@@ -7,7 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><!--inserire codice bootstrap-->
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <div class="d-none d-md-block mainHeader">
@@ -22,7 +22,7 @@
             </div>
             <div class="col-md-4 col-md text-end zonaSubscribe">
                 <button type="button" class="Icon" data-bs-toggle="modal" data-bs-target="#exampleModal"><!-- Button trigger modal -->
-                    <img src="https://placehold.co/50x50?text=Email+Icon" alt="email icon">
+                    <i class="fa fa-envelope " id="emailIcon2"></i>
                 </button>
                 <button type="button" class="btn btn-primary ">Subscribe</button>
                 <button class="btn btn-link"> Sign in</button>
@@ -48,7 +48,7 @@
 </div><!--header FIX ME-->
 <nav class="navbar navbar-expand-md bg-danger sticky-top" >
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"> <i class="fa fa-bars" style="font-size:24px; color: white"></i></span>
         </button>
         <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
@@ -58,7 +58,7 @@
                 <div class="searchContainer">
                     <form class="d-flex d-lg-none" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success bs-btn-active-bg" type="submit">Search</button>
+                        <button class="btn btn-outline-success bs-btn-active-bg" type="submit"><i class="fa fa-search" style="font-size: 24px"></i></button>
                     </form><!--barra di ricerca nascosta-->
                 </div>
                 <div class="listaBottoniCollaspe">
@@ -247,8 +247,8 @@
                 </li><!--Games dropdown-->
                 <!--Item che si aggiungono quando scrollo-->
                 <li class="nav-item show-on-scroll ">
-                    <a href="#"  class="Icon ">
-                        <img src="https://placehold.co/50x50?text=Email+Icon" alt="email icon">
+                    <a href="#"  class="Icon2 ">
+                        <i class="fa fa-envelope" id="emailIcon"></i>
                     </a>
                 </li>
                 <li class="nav-item show-on-scroll ">
@@ -263,7 +263,7 @@
         <div class="brandZone d-flex d-md-none ">
             <a class="navbar-brand" href="#">THE WASHINGTON TIME</a>
         </div>
-    <button class="btn btn-primary  d-flex d-md-none" type="button" id="closeButtonRight" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">IO</button>
+    <button class="btn btn-primary  d-flex d-md-none" type="button" id="closeButtonRight" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa fa-user-circle-o" style="font-size:36px; color: white"></i></button>
 
     <div class="offcanvas offcanvas-end d-flex d-md-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
@@ -300,7 +300,7 @@
                 <div class="col-md-4 podcastItem">
                     <article>
                         <div class="imagePlace">
-                            <a href="#"><img src="https://placehold.co/65x65"></a>
+                            <a href="#"><img src="https://placehold.co/65x65" alt="article photo"></a>
                         </div>
                         <div class="articleTitle">
                             <a href="#"><strong>Lorem ipsum dolor sit amet</strong></a>
@@ -313,7 +313,7 @@
                 <div class="col-md-4 podcastItem">
                     <article>
                         <div class="imagePlace">
-                            <a href="#"><img src="https://placehold.co/65x65"></a>
+                            <a href="#"><img src="https://placehold.co/65x65" alt="article photo"></a>
                         </div>
                         <div class="articleTitle">
                             <a href="#"><strong>Lorem ipsum dolor sit amet</strong></a>
@@ -326,7 +326,7 @@
                 <div class="col-md-4 podcastItem">
                     <article>
                         <div class="imagePlace">
-                            <a href="#"><img src="https://placehold.co/65x65"></a>
+                            <a href="#"><img src="https://placehold.co/65x65" alt="article photo"></a>
                         </div>
                         <div class="articleTitle">
                             <a href="#"><strong>Lorem ipsum dolor sit amet</strong></a>
@@ -385,7 +385,7 @@
                         </h2>
                         <div class="mainPhoto text-center">
                             <a href="#">
-                                <img src="https://placehold.co/1150x670" class="img-fluid">
+                                <img src="https://placehold.co/1150x670" class="img-fluid" alt="important news">
                             </a>
                         </div>
                         <div class="articleText">
@@ -457,7 +457,7 @@
                     <article class="topStoryItem">
                         <div class="row">
                             <div class="col-auto topStoryImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsStory">
                                 <div class="storyTag">
@@ -472,7 +472,7 @@
                     <article class="topStoryItem">
                         <div class="row">
                             <div class="col-auto topStoryImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsStory">
                                 <div class="storyTag">
@@ -487,7 +487,7 @@
                     <article class="topStoryItem">
                         <div class="row">
                             <div class="col-auto topStoryImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsStory">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -501,7 +501,7 @@
                     <div class="sectionTitle">
                         <h4><a href="#">MY</a><a href="#"> TIMES</a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL <i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <div class="myTimesBody">
@@ -510,7 +510,7 @@
                                 <article class="myTimesNews">
                                     <div class="row myTimesElement">
                                         <div class="col-auto myTimesImage">
-                                            <a href="#"><img src="https://placehold.co/85x85"></a>
+                                            <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                         </div>
                                         <div class=" col detailsMyTimes">
                                             <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -522,7 +522,7 @@
                                 <article class="myTimesNews">
                                     <div class="row myTimesElement">
                                         <div class="col-auto myTimesImage">
-                                            <a href="#"><img src="https://placehold.co/85x85"></a>
+                                            <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                         </div>
                                         <div class=" col detailsMyTimes">
                                             <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -536,7 +536,7 @@
                                 <article class="myTimesNews">
                                     <div class="row myTimesElement">
                                         <div class="col-auto myTimesImage">
-                                            <a href="#"><img src="https://placehold.co/85x85"></a>
+                                            <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                         </div>
                                         <div class=" col detailsMyTimes">
                                             <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -548,7 +548,7 @@
                                 <article class="myTimesNews">
                                     <div class="row myTimesElement">
                                         <div class="col-auto myTimesImage">
-                                            <a href="#"><img src="https://placehold.co/85x85"></a>
+                                            <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                         </div>
                                         <div class=" col detailsMyTimes">
                                             <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -563,13 +563,13 @@
                     <div class="sectionTitle">
                         <h4><a href="#">CULTURE</a><a href="#"></a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL <i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <article class=" d-none d-md-block cultureArticle first">
                         <div class="row">
                             <div class="col-auto cultureImage">
-                                <a href="#"><img src="https://placehold.co/166x97"></a>
+                                <a href="#"><img src="https://placehold.co/166x97" alt="culture photo"></a>
                             </div>
                             <div class=" col detailsCulture">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -591,7 +591,7 @@
                     <article class="cultureArticle">
                         <div class="row">
                             <div class="col-auto cultureImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsCulture">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -603,7 +603,7 @@
                     <article class="cultureArticle">
                         <div class="row">
                             <div class="col-auto cultureImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsCulture">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -615,7 +615,7 @@
                     <article class="cultureArticle last">
                         <div class="row">
                             <div class="col-auto cultureImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsCulture">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -629,14 +629,14 @@
                     <div class="sectionTitle">
                         <h4><a href="#">THREAT</a><a href="#"> STATUS</a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL <i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <div class="bodyInformation">
                         <article class="d-none d-md-block threatArticle first">
                             <div class="row">
                                 <div class="col-auto threatImage">
-                                    <a href="#"><img src="https://placehold.co/166x97"></a>
+                                    <a href="#"><img src="https://placehold.co/166x97" alt="threat photo"></a>
                                 </div>
                                 <div class=" col detailsThreat">
                                     <div class="storyTag">
@@ -664,7 +664,7 @@
                         <article class="threatArticle">
                             <div class="row">
                                 <div class="col-auto threatImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsThreat">
                                     <div class="storyTag">
@@ -679,7 +679,7 @@
                         <article class="threatArticle">
                             <div class="row">
                                 <div class="col-auto threatImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsThreat">
                                     <div class="storyTag">
@@ -694,7 +694,7 @@
                         <article class="threatArticle last">
                             <div class="row">
                                 <div class="col-auto threatImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsThreat">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -709,13 +709,13 @@
                     <div class="sectionTitle">
                         <h4><a href="#">POLITICS</a><a href="#"></a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL <i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <article class="d-none d-md-block politicsArticle first">
                         <div class="row">
                             <div class="col-auto politicsImage">
-                                <a href="#"><img src="https://placehold.co/166x97"></a>
+                                <a href="#"><img src="https://placehold.co/166x97" alt="politics photo"></a>
                             </div>
                             <div class=" col detailsPolitics">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -737,7 +737,7 @@
                     <article class="politicsArticle">
                         <div class="row">
                             <div class="col-auto politicsImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsPolitics">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -749,7 +749,7 @@
                     <article class="politicsArticle">
                         <div class="row">
                             <div class="col-auto politicsImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsPolitics">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -761,7 +761,7 @@
                     <article class="politicsArticle last">
                         <div class="row">
                             <div class="col-auto politicsImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsPolitics">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -775,14 +775,14 @@
                     <div class="sectionTitle">
                         <h4><a href="#">Higher Ground</a><a href="#"></a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL<i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <div class="bodyInformation">
                         <article class=" d-none d-md-block highArticle first">
                             <div class="row">
                                 <div class="col-auto highImage">
-                                    <a href="#"><img src="https://placehold.co/166x97"></a>
+                                    <a href="#"><img src="https://placehold.co/166x97" alt="high photo"></a>
                                 </div>
                                 <div class=" col detailsHigh">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -807,7 +807,7 @@
                         <article class="highArticle">
                             <div class="row">
                                 <div class="col-auto highImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsHigh">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -819,7 +819,7 @@
                         <article class="highArticle">
                             <div class="row">
                                 <div class="col-auto highImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsHigh">
                                     <div class="storyTag">
@@ -834,7 +834,7 @@
                         <article class="highArticle last">
                             <div class="row">
                                 <div class="col-auto highImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsHigh">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -849,13 +849,13 @@
                     <div class="sectionTitle">
                         <h4><a href="#">CAMPAIGN 2024</a><a href="#"></a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL<i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <article class=" d-none d-md-block campaignArticle first">
                         <div class="row">
                             <div class="col-auto campaignImage">
-                                <a href="#"><img src="https://placehold.co/166x97"></a>
+                                <a href="#"><img src="https://placehold.co/166x97" alt="campaign photo"></a>
                             </div>
                             <div class=" col detailsCampaign">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -877,7 +877,7 @@
                     <article class="campaignArticle">
                         <div class="row">
                             <div class="col-auto campaignImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsCampaign">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -889,7 +889,7 @@
                     <article class="campaignArticle">
                         <div class="row">
                             <div class="col-auto campaignImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsCampaign">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -901,7 +901,7 @@
                     <article class="campaignArticle last">
                         <div class="row">
                             <div class="col-auto campaignImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsCampaign">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -915,13 +915,13 @@
                     <div class="sectionTitle">
                         <h4><a href="#">DIVE DEEPER</a><a href="#"></a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL<i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <article class=" d-none d-md-block diveDeeperArticle first">
                         <div class="row">
                             <div class="col-auto diveImage">
-                                <a href="#"><img src="https://placehold.co/166x97"></a>
+                                <a href="#"><img src="https://placehold.co/166x97" alt="dive deeper photo"></a>
                             </div>
                             <div class=" col detailsDive">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -945,7 +945,7 @@
                     <article class="diveDeeperArticle">
                         <div class="row">
                             <div class="col-auto diveImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsDive">
                                 <div class="storyTag">
@@ -958,7 +958,7 @@
                     <article class="diveDeeperArticle">
                         <div class="row">
                             <div class="col-auto diveImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsDive">
                                 <div class="storyTag">
@@ -971,7 +971,7 @@
                     <article class="diveDeeperArticle last">
                         <div class="row">
                             <div class="col-auto diveImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsDive">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -983,13 +983,13 @@
                     <div class="sectionTitle">
                         <h4><a href="#">NATIONAL</a><a href="#"></a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL<i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <article class=" d-none d-md-block nationalArticle first">
                         <div class="row">
                             <div class="col-auto nationalImage">
-                                <a href="#"><img src="https://placehold.co/166x97"></a>
+                                <a href="#"><img src="https://placehold.co/166x97" alt="national photo"></a>
                             </div>
                             <div class=" col detailsNational">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1011,7 +1011,7 @@
                     <article class="nationalArticle">
                         <div class="row">
                             <div class="col-auto nationalImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsNational">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1023,7 +1023,7 @@
                     <article class="nationalArticle">
                         <div class="row">
                             <div class="col-auto nationalImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsNational">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1035,7 +1035,7 @@
                     <article class="nationalArticle last">
                         <div class="row">
                             <div class="col-auto nationalImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsNational">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1049,13 +1049,13 @@
                     <div class="sectionTitle">
                         <h4><a href="#">WORLD</a><a href="#"></a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL<i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <article class=" d-none d-md-block worldArticle first">
                         <div class="row">
                             <div class="col-auto worldImage">
-                                <a href="#"><img src="https://placehold.co/166x97"></a>
+                                <a href="#"><img src="https://placehold.co/166x97" alt="world photo"></a>
                             </div>
                             <div class=" col detailsWorld">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1077,7 +1077,7 @@
                     <article class="worldArticle">
                         <div class="row">
                             <div class="col-auto worldImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsWorld">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1089,7 +1089,7 @@
                     <article class="worldArticle">
                         <div class="row">
                             <div class="col-auto worldImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsWorld">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1101,7 +1101,7 @@
                     <article class="worldArticle last">
                         <div class="row">
                             <div class="col-auto worldImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsWorld">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1115,13 +1115,13 @@
                     <div class="sectionTitle">
                         <h4><a href="#">SPORTS</a><a href="#"></a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL<i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <article class="d-none d-md-block sportArticle first">
                         <div class="row">
                             <div class="col-auto sportImage">
-                                <a href="#"><img src="https://placehold.co/166x97"></a>
+                                <a href="#"><img src="https://placehold.co/166x97" alt="sport photo"></a>
                             </div>
                             <div class=" col detailsSport">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1143,7 +1143,7 @@
                     <article class="sportArticle">
                         <div class="row">
                             <div class="col-auto sportImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsSport">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1155,7 +1155,7 @@
                     <article class="sportArticle">
                         <div class="row">
                             <div class="col-auto sportImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsSport">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1167,7 +1167,7 @@
                     <article class="sportArticle last">
                         <div class="row">
                             <div class="col-auto sportImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsSport">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1181,13 +1181,13 @@
                     <div class="sectionTitle">
                         <h4><a href="#">PODCAST</a><a href="#"></a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL<i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <article class="d-none d-md-block podcastArticle first">
                         <div class="row">
                             <div class="col-auto podImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsPodcast">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </a></h6>
@@ -1209,7 +1209,7 @@
                     <article class="podcastArticle">
                         <div class="row">
                             <div class="col-auto podImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsPodcast">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </a></h6>
@@ -1220,7 +1220,7 @@
                     <article class="podcastArticle">
                         <div class="row">
                             <div class="col-auto podImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsPodcast">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </a></h6>
@@ -1231,7 +1231,7 @@
                     <article class="podcastArticle last">
                         <div class="row">
                             <div class="col-auto podImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsPodcast">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </a></h6>
@@ -1244,7 +1244,7 @@
                     <div class="sectionTitle">
                         <h4><a href="#">SPONSORED CONTEST</a><a href="#"></a></h4>
                         <span>
-                            <a href="#" class="information"><i>VIEW ALL</i></a>
+                            <a href="#" class="information"><i>VIEW ALL<i class="fa fa-chevron-circle-right"></i></i></a>
                         </span>
                     </div>
                     <article class=" d-none d-md-block sponsorArticle">
@@ -1253,7 +1253,7 @@
                         </div>
                         <div class="row">
                             <div class="col-auto spImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsSponsor">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </a></h6>
@@ -1276,7 +1276,7 @@
                         </div>
                         <div class="row">
                             <div class="col-auto spImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsSponsor">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </a></h6>
@@ -1289,7 +1289,7 @@
                         </div>
                         <div class="row">
                             <div class="col-auto spImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsSponsor">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </a></h6>
@@ -1302,7 +1302,7 @@
                         </div>
                         <div class="row">
                             <div class="col-auto spImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsSponsor">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  </a></h6>
@@ -1317,7 +1317,7 @@
                     <article class=" d-none d-md-block moreStoriesArticle first">
                         <div class="row">
                             <div class="col-auto mStImage">
-                                <a href="#"><img src="https://placehold.co/166x97"></a>
+                                <a href="#"><img src="https://placehold.co/166x97" alt="more stories article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1339,7 +1339,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1351,7 +1351,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1363,7 +1363,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1375,7 +1375,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1387,7 +1387,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1399,7 +1399,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1411,7 +1411,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1423,7 +1423,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1435,7 +1435,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1447,7 +1447,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1459,7 +1459,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1471,7 +1471,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <div class="storyTag">
@@ -1486,7 +1486,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1498,7 +1498,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1510,7 +1510,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1522,7 +1522,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1534,7 +1534,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1546,7 +1546,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1558,7 +1558,7 @@
                     <article class="moreStoriesArticle">
                         <div class="row">
                             <div class="col-auto mStImageImage">
-                                <a href="#"><img src="https://placehold.co/85x85"></a>
+                                <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                             </div>
                             <div class=" col detailsMoreStories">
                                 <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit amet neque condimentum, rhoncus faucibus lectus. </a></h6>
@@ -1575,7 +1575,7 @@
                         <article class="breakingNews">
                             <div class="row breakingNewsElement">
                                 <div class="col-auto newsImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsNews">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1585,7 +1585,7 @@
                         <article class="breakingNews">
                             <div class="row breakingNewsElement">
                                 <div class="col-auto newsImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsNews">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1595,7 +1595,7 @@
                         <article class="breakingNews">
                             <div class="row breakingNewsElement">
                                 <div class="col-auto newsImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsNews">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1605,7 +1605,7 @@
                         <article class="breakingNews">
                             <div class="row breakingNewsElement">
                                 <div class="col-auto newsImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsNews">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1615,7 +1615,7 @@
                         <article class="breakingNews">
                             <div class="row breakingNewsElement">
                                 <div class="col-auto newsImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsNews">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1646,7 +1646,7 @@
                                 <a class="articleText" href="#"><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc velit neque, dignissim sit.</strong></a>
                             </article>
                         </div>
-                    </section><!--sezione most important FIX ME responsività-->
+                    </section><!--sezione most important-->
                     <section class="byTheNumbersBlock">
                         <h2 class="d-none d-md-block blockTitle">BY THE NUMBERS</h2>
                         <div class="d-flex d-md-none sectionTitle">
@@ -1654,10 +1654,10 @@
                         </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <div class="blockImage">
                             <a href="#">
-                                <img src="https://placehold.co/1150x670" class="img-fluid">
+                                <img src="https://placehold.co/1150x670" class="img-fluid" alt="by the numbers photo">
                             </a>
                             <p>
-                                <a href="#">CLICK TO ENLARGE</a>
+                                <a href="#">CLICK TO ENLARGE<i class="fa fa-chevron-circle-right"></i></a>
                             </p>
                         </div>
 
@@ -1690,7 +1690,7 @@
                         <article class="Quiz">
                             <div class="row quizItem">
                                 <div class="col-auto newsImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class="col detailsQuiz">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1700,7 +1700,7 @@
                         <article class="Quiz">
                             <div class="row quizItem">
                                 <div class="col-auto newsImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class="col detailsQuiz">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1710,7 +1710,7 @@
                         <article class="Quiz">
                             <div class="row quizItem">
                                 <div class="col-auto newsImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class="col detailsQuiz">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1728,17 +1728,17 @@
                                 <span class="title"> Follow us</span>
                             </div>
                             <div class="col-auto">
-                                <a href="#" class="socialIcon"><img src="https://placehold.co/30x30?text=FE"></a>
-                                <a href="#" class="socialIcon"><img src="https://placehold.co/30x30?text=I"></a>
-                                <a href="#" class="socialIcon"><img src="https://placehold.co/30x30?text=X"></a>
-                                <a href="#" class="socialIcon"><img src="https://placehold.co/30x30?text=F"></a>
+                                <a href="#" class="socialIcon"><i class="fa fa-rss-square" id="rss"></i></a>
+                                <a href="#" class="socialIcon"><i class="fa fa-instagram" id="instagram"></i></a>
+                                <a href="#" class="socialIcon"><i class="fa fa-twitter-square" id="twitter"></i></a>
+                                <a href="#" class="socialIcon"><i class="fa fa-facebook-official" id="facebook"></i></a>
                             </div>
                         </div>
-                    </section><!--social FIX ME responsività-->
+                    </section><!--social-->
                     <section class="searchContainer">
                         <form role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success bs-btn-active-bg" type="submit">Search</button>
+                            <button class="btn btn-outline-success bs-btn-active-bg" type="submit"><i class="fa fa-search" style= "font-size: 24px"></i></button>
                         </form>
                     </section><!--barra di ricerca-->
                     <section class="videoContent">
@@ -1747,7 +1747,7 @@
                                 <source src="https://placehold.co/1200x700.mp4">
                             </video>
                             <p>
-                                <a href="#"> SEE MORE VIDEOS</a>
+                                <a href="#"> SEE MORE VIDEOS<i class="fa fa-chevron-circle-right"></i></a>
                             </p>
                         </div>
                     </section><!--sezione video-->
@@ -1756,7 +1756,7 @@
                         <article class="commentaryItem">
                             <div class="row">
                                 <div class="col-auto">
-                                    <a href="#"><img src="https://placehold.co/85x119"></a>
+                                    <a href="#"><img src="https://placehold.co/85x119" alt="columnist photo"></a>
                                 </div>
                                 <div class="col storyDetails">
                                     <h3 class="articleHead"><a href="#"> LOREM IPSUM</a></h3>
@@ -1767,7 +1767,7 @@
                         <article class="commentaryItem">
                             <div class="row">
                                 <div class="col-auto">
-                                    <a href="#"><img src="https://placehold.co/85x119"></a>
+                                    <a href="#"><img src="https://placehold.co/85x119" alt="columnist photo"></a>
                                 </div>
                                 <div class="col storyDetails">
                                     <h3 class="articleHead"><a href="#"> LOREM IPSUM</a></h3>
@@ -1776,7 +1776,7 @@
                             </div>
                         </article>
                         <p>
-                            <a href="#" class="information"><i>MORE COLUMNIST</i></a>
+                            <a href="#" class="information"><i>MORE COLUMNIST<i class="fa fa-chevron-circle-right"></i></i></a>
                         </p>
                     </section><!--commentary-->
                     <section class="rapidReactionsZone">
@@ -1787,7 +1787,7 @@
                         <article class="reactionItem">
                             <div class="row">
                                 <div class="col-auto reactionImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsReaction">
                                     <div class="storyTag">
@@ -1801,7 +1801,7 @@
                         <article class="reactionItem">
                             <div class="row">
                                 <div class="col-auto reactionImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsReaction">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1810,7 +1810,7 @@
                             </div>
                         </article>
                         <p>
-                            <a href="#" class="information"><i>READ MORE</i></a>
+                            <a href="#" class="information"><i>READ MORE<i class="fa fa-chevron-circle-right"></i></i></a>
                         </p>
                     </section><!--Rapid Reactions-->
                     <section class="mediaSpotlightPlace">
@@ -1821,7 +1821,7 @@
                         <article class="spotItem">
                             <div class="row">
                                 <div class="col-auto spotImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsSpot">
                                     <div class="storyTag">
@@ -1835,7 +1835,7 @@
                         <article class="spotItem">
                             <div class="row">
                                 <div class="col-auto spotImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsSpot">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1846,7 +1846,7 @@
                         <article class="spotItem">
                             <div class="row">
                                 <div class="col-auto spotImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsSpot">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1855,7 +1855,7 @@
                             </div>
                         </article>
                         <p>
-                            <a href="#" class="information"><i>READ MORE</i></a>
+                            <a href="#" class="information"><i>READ MORE<i class="fa fa-chevron-circle-right"></i></i></a>
                         </p>
                     </section><!--media spotlight place-->
                     <section class="homeOpinionZone">
@@ -1866,7 +1866,7 @@
                         <article class="opinionItem">
                             <div class="row">
                                 <div class="col-auto opinionImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsOpinion">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1877,7 +1877,7 @@
                         <article class="opinionItem">
                             <div class="row">
                                 <div class="col-auto opinionImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsOpinion">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1888,7 +1888,7 @@
                         <article class="opinionItem">
                             <div class="row">
                                 <div class="col-auto opinionImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsOpinion">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1899,7 +1899,7 @@
                         <article class="opinionItem">
                             <div class="row">
                                 <div class="col-auto opinionImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsOpinion">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1910,7 +1910,7 @@
                         <article class="opinionItem">
                             <div class="row">
                                 <div class="col-auto opinionImage">
-                                    <a href="#"><img src="https://placehold.co/85x85"></a>
+                                    <a href="#"><img src="https://placehold.co/85x85" alt="article photo"></a>
                                 </div>
                                 <div class=" col detailsOpinion">
                                     <h6><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </a></h6>
@@ -1926,7 +1926,7 @@
                         </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <div class="blockImage">
                             <a href="#">
-                                <img src="https://placehold.co/1200x680" class="img-fluid">
+                                <img src="https://placehold.co/1200x680" class="img-fluid" alt="cartoon">
                             </a>
                         </div>
                     </section><!--cartoonPlace-->
@@ -1962,7 +1962,7 @@
                         </div><!--cambio titolo che avviene al con il cambio di dimensione-->
                         <div class="blockImage">
                             <a href="#">
-                                <img src="https://placehold.co/1200x700" class="img-fluid">
+                                <img src="https://placehold.co/1200x700" class="img-fluid" alt="main photo of gallery">
                             </a>
                         </div>
                         <p>
@@ -1974,7 +1974,7 @@
                         <article class="paperItem">
                             <div class="row">
                                 <div class="col-auto">
-                                    <a href="#"><img src="https://placehold.co/85x150"></a>
+                                    <a href="#"><img src="https://placehold.co/85x150" alt="newspaper"></a>
                                 </div>
                                 <div class="col paperDetails">
                                     <h3 class="itemTitle"><a href="#"> LOREM IPSUM</a></h3>
@@ -1983,7 +1983,7 @@
                                 </div>
                             </div>
                             <p>
-                                <a href="#" class="information"><strong>view today's front page</strong></a>
+                                <a href="#" class="information"><strong>view today's front page<i class="fa fa-chevron-circle-right"></i></strong></a>
                             </p>
                         </article>
                     </section><!--Paper-->
@@ -1992,7 +1992,7 @@
                         <div class="d-flex d-md-none sectionTitle">
                             <h4><a href="#">FRONT PAGE PODCAST</a><a href="#"></a></h4>
                         </div><!--cambio titolo che avviene al con il cambio di dimensione-->
-                        <img src="https://placehold.co/1200x700?text=AUDIO+SPACE" class="img-fluid ">
+                        <img src="https://placehold.co/1200x700?text=AUDIO+SPACE" class="img-fluid " alt="audio">
                 </section> <!--non saprei come importare l'audio-->
                 </aside>
             </div><!--colonna di destra FIX ME-->
@@ -2004,7 +2004,7 @@
         <div class="containerMoreNews">
             <div class="header">
                 <h2 class="preFooterHeading">
-                    <img src="https://placehold.co/75x75?text=SMALL+LOGO">
+                    <img src="https://placehold.co/75x75?text=SMALL+LOGO"  alt="small logo">
                     MORE NEWS
                 </h2>
             </div>
@@ -2198,7 +2198,7 @@
         <div class="policyNews">
             <div class="header">
                 <h2 class="preFooterHeading">
-                    <img src="https://placehold.co/75x75?text=SMALL+LOGO">
+                    <img src="https://placehold.co/75x75?text=SMALL+LOGO" alt="small logo">
                     POLICY
                 </h2>
             </div>

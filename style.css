@@ -67,6 +67,9 @@ a, .btn-link{
 .Icon{
     border-color: transparent;
     background-color: transparent;
+    width: 50px;
+    position: relative;
+    bottom: -8px;
 }
 .bg-danger{
     background-color: #a9091f !important;
@@ -139,9 +142,9 @@ body{
     margin: 0;
     background: transparent;
     border: 0;
-    padding: 0 30px 0 0;
+    padding: 0 20px 0 0;
     outline: none;
-
+    color: black;
 }
 button.btn.btn-outline-success:active,
 button.btn.btn-outline-success:focus {
@@ -809,3 +812,33 @@ section h3, .contentSection h3 a{
      font-size: 20px;
      text-transform: uppercase;
  }
+#emailIcon, #emailIcon2{
+    font-size: 36px;
+    color: gray;
+}
+.Icon2{
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.navbar-toggler-icon {
+    background-image: none;
+}
+#facebook, #instagram, #rss, #twitter{
+    color: gray;
+    font-size: 30px;
+}
+#facebook:hover{
+    color: blue;
+}
+#instagram:hover{
+    color: #6f42c1;
+}
+#rss:hover{
+    color: orange;
+}
+#twitter:hover{
+    color: #0dcaf0;
+}
+.fa-search:hover{
+    color: darkred;
+}
