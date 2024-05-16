@@ -25,9 +25,6 @@ body{
     background-color: red;
     border-color: red;
 }
-.nav-item .btn-primary{
-  padding: 8px;
-}
 h5{
     font-style: italic;
     font-size: 18px;
@@ -57,12 +54,14 @@ a, .btn-link{
     color: red;!important;
     box-shadow: none;
     background-color: transparent;!important;
-
 }
-.nav-item .btn-link{
-    padding: 8px;
-    border-radius: 1px;
-    font-size: 16px;
+#emailIcon, #emailIcon2{
+    font-size: 36px;
+    color: gray;
+}
+.Icon2{
+    margin-right: 8px;
+    margin-left: 8px;
 }
 .Icon{
     border-color: transparent;
@@ -72,6 +71,17 @@ a, .btn-link{
     bottom: -8px;
 }
 /*css navbar*/
+.navbar-toggler-icon {
+    background-image: none;
+}
+.nav-item .btn-primary{
+    padding: 8px;
+}
+.nav-item .btn-link{
+    padding: 8px;
+    border-radius: 1px;
+    font-size: 16px;
+}
 .bg-danger{
     background-color: #a9091f !important;
 }
@@ -121,6 +131,7 @@ a, .btn-link{
 .show-on-scroll .btn-primary:hover{
     background-color: black;
 }
+
 .form-control{
     height: 36px;
     padding: 2px 40px 4px 16px;
@@ -655,6 +666,7 @@ form{
     margin-top: 0;
     text-transform: uppercase;
 }
+/*preFooter*/
 #preFooter .leadStory{
     border-top: none;
     margin-top: 0;
@@ -686,6 +698,37 @@ form{
 .content{
     padding-top: 16px;
 }
+#facebook, #instagram, #rss, #twitter{
+    color: gray;
+    font-size: 30px;
+}
+#facebook:hover{
+    color: blue;
+}
+#instagram:hover{
+    color: #6f42c1;
+}
+#rss:hover{
+    color: orange;
+}
+#twitter:hover{
+    color: #0dcaf0;
+}
+.fa-search:hover{
+    color: darkred;
+}
+aside{
+    display: block;
+    height: 100%;
+    padding-bottom: 20px;
+}
+.audioSection, .latestQuizBlock{
+    position: sticky;
+    top: 42px;
+    margin: 0;
+    z-index: 1;
+}
+/*Footer*/
 #footer{
     border-top: 1px solid #dde0e4;
     background-color: #e8eaed;
@@ -764,6 +807,7 @@ section h3, .contentSection h3 a{
 #copyright .info{
     display: block;
 }
+/*per lo schermo mobile*/
 .articleVisibleOnlyMobile{
     background-image: url("https://placehold.co/1200x670");
     height: 450px;
@@ -793,44 +837,4 @@ section h3, .contentSection h3 a{
      font-size: 20px;
      text-transform: uppercase;
  }
-#emailIcon, #emailIcon2{
-    font-size: 36px;
-    color: gray;
-}
-.Icon2{
-    margin-right: 8px;
-    margin-left: 8px;
-}
-.navbar-toggler-icon {
-    background-image: none;
-}
-#facebook, #instagram, #rss, #twitter{
-    color: gray;
-    font-size: 30px;
-}
-#facebook:hover{
-    color: blue;
-}
-#instagram:hover{
-    color: #6f42c1;
-}
-#rss:hover{
-    color: orange;
-}
-#twitter:hover{
-    color: #0dcaf0;
-}
-.fa-search:hover{
-    color: darkred;
-}
-aside{
-    display: block;
-    height: 100%;
-    padding-bottom: 20px;
-}
-.audioSection, .latestQuizBlock{
-    position: sticky;
-    top: 42px;
-    margin: 0;
-    z-index: 1;
-}
+
