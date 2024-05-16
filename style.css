@@ -3,6 +3,7 @@ body{
     font-weight: 400;
     color:black;
 }
+/* css header*/
 .logo{
     text-align: center;
 }
@@ -26,7 +27,6 @@ body{
 }
 .nav-item .btn-primary{
   padding: 8px;
-
 }
 h5{
     font-style: italic;
@@ -71,6 +71,7 @@ a, .btn-link{
     position: relative;
     bottom: -8px;
 }
+/*css navbar*/
 .bg-danger{
     background-color: #a9091f !important;
 }
@@ -104,16 +105,12 @@ a, .btn-link{
     top: 8px;
     left: 0;
     padding: .5rem;
-
-}
-.offcanvas-header{
-    height: 2px;
-}
-body{
-    padding-top: 8px;
 }
 .btn-link:hover{
     color: red;
+}
+.show-on-scroll {
+    display: none;
 }
 .show-on-scroll .btn-link{
     background-color: white;
@@ -131,7 +128,6 @@ body{
     width: 100%;
     border: 1px solid #aaa;
     color: #222;
-
 }
 .btn-outline-success {
    line-height: 36px;
@@ -156,14 +152,11 @@ button.btn.btn-outline-success:focus {
     background-color: transparent;
     color: #842029;
 }
-
-
 .offcanvas-body .btn-outline {
     background-color: transparent;
     border-color: transparent;
     margin-top: 5px;
     color: white;
-
 }
 .offcanvas-body .btn-outline:active, .offcanvas-body .btn-outline:focus{
     background-color: transparent;
@@ -194,9 +187,6 @@ form{
 }
 .navbar-toggler, .brandZone{
     float: left;
-}
-.show-on-scroll {
-    display: none;
 }
 .navbar-brand, .navbar-brand:hover, .navbar-brand:focus, .navbar-brand:active{
     color: white;
@@ -235,6 +225,7 @@ form{
 .linkSection .linkSpace a{
     color: white;
 }
+/*Podcast*/
 .PodcastSection{
     background-color: #e8eaed;
 }
@@ -244,7 +235,6 @@ form{
 .podcastItem span{
     display: block;
     color: gray;
-
 }
 .podcastContainer{
     width: 1200px;
@@ -259,6 +249,7 @@ form{
 .articleTitle a{
     color: black;
 }
+/*Trending*/
 .topics{
     text-align: center;
     margin-top: 8px;
@@ -281,6 +272,7 @@ form{
     text-decoration: underline;
     text-decoration-style: solid;
 }
+/*Main*/
 #centralColumn{
     border-left: 3px solid #e8eaed;
     border-right: 3px solid #e8eaed;
@@ -288,7 +280,7 @@ form{
 .detailsNews, .detailsQuiz, .detailsReaction, .detailsSpot, .detailsOpinion, .detailsStory, .detailsMyTimes, .detailsCulture, .detailsThreat, .detailsPolitics, .detailsHigh, .detailsCampaign, .detailsDive, .detailsNational, .detailsWorld, .detailsSport, .detailsPodcast, .detailsSponsor{
     padding: 10px;
 }
-.detailsNews h6 a:hover, .detailsQuiz h6 a:hover, .detailsStory h6 a:hover, .detailsCulture h6 a:hover, .detailsThreat h6 a:hover, .detailsPolitics h6 a:hover, .detailsHigh h6 a:hover, .detailsCampaign h6 a:hover, .detailsDive h6 a:hover, .detailsNational h6 a:hover, .detailsWorld h6 a:hover, .detailsSport h6 a:hover, .detailsPodcast h6 a:hover, .detailsSponsor h6 a:hover, .detailsMoreStories h6 a:hover{
+.detailsNews h6 a:hover, .detailsQuiz h6 a:hover, .detailsStory h6 a:hover, .detailsCulture h6 a:hover, .detailsThreat h6 a:hover, .detailsPolitics h6 a:hover, .detailsHigh h6 a:hover, .detailsCampaign h6 a:hover, .detailsDive h6 a:hover, .detailsNational h6 a:hover, .detailsWorld h6 a:hover, .detailsSport h6 a:hover, .detailsPodcast h6 a:hover, .detailsSponsor h6 a:hover, .detailsMoreStories h6 a:hover, .blockContent a:hover{
     color: darkred;
 }
 .detailsNews h6 a, .detailsQuiz h6 a, .reactionItem h6 a , .detailsSpot h6 a, .detailsOpinion h6 a, .detailsStory h6 a, .detailsMyTimes h6 a, .detailsCulture h6 a, .detailsThreat h6 a, .detailsPolitics h6 a, .detailsHigh h6 a, .detailsCampaign h6 a, .detailsDive h6 a, .detailsNational h6 a, .detailsWorld h6 a, .detailsSport h6 a, .detailsPodcast h6 a, .detailsSponsor h6 a, .detailsMoreStories h6 a{
@@ -300,7 +292,7 @@ form{
 .breakingNews, .Quiz{
     margin-bottom: 16px;
 }
-.breakingNewsBlock{
+.breakingNewsBlock, .byTheNumbersBlock{
     margin-bottom: 50px;
 }
 .mostPopularBlock{
@@ -326,9 +318,6 @@ form{
     font-size: 16px;
     color: black;
 }
-.blockContent a:hover{
-    color: darkred;
-}
 .byTheNumbersBlock .blockImage p, .videoContent .videoSection p {
     text-align:end;
     font-size: 13px;
@@ -341,10 +330,7 @@ form{
 .byTheNumbersBlock .blockImage p a:hover, .videoContent .videoSection p a:hover{
     text-decoration: underline;
 }
-.byTheNumbersBlock{
-    margin-bottom: 50px;
-}
- .itemTitle{
+.itemTitle{
     font-size: 14px;
     margin-bottom: 0;
     font-weight: 700;
@@ -558,7 +544,7 @@ form{
     background-color: gray;
 }
 .topStoryItem{
-   margin-bottom: 0;
+    margin-bottom: 0;
     border-bottom: 1px solid #e8eaed;
     padding-bottom: 30px;
     padding-top: 16px;
@@ -592,7 +578,7 @@ form{
     text-decoration: underline;
 }
 .myTimesBody .row{
-margin-bottom: 12px;
+    margin-bottom: 12px;
 }
 .myTimesSection{
     border-bottom: 5px solid #e8eaed;;
@@ -606,7 +592,6 @@ margin-bottom: 12px;
     padding-bottom: 25px;
     margin-bottom: 0;
     padding-top: 16px;
-
 }
 .last{
     border-bottom: none;
@@ -618,7 +603,6 @@ margin-bottom: 12px;
 .threatStatusSection .sectionTitle h4 a{
     font-size: 25px;
     color: #052c65;
-
 }
 .threatStatusSection .sectionTitle h4 a:last-child{
     color: white;
@@ -787,7 +771,6 @@ section h3, .contentSection h3 a{
     background-repeat: no-repeat;
     background-position: center center;
     position: relative;
-    
 }
 .textArticle{
     position: absolute;
