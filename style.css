@@ -433,6 +433,8 @@ form{
 }
 .polContent h3{
     font-size: 18px;
+    color: black;
+    font-weight: 700;
 }
 .polContent form{
     margin-left: 30px;
