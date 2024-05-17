@@ -73,6 +73,7 @@ a, .btn-link{
 /*css navbar*/
 .navbar-toggler-icon {
     background-image: none;
+    border: none;
 }
 .nav-item .btn-primary{
     padding: 8px;
@@ -91,11 +92,17 @@ a, .btn-link{
 .navbar-nav .dropdown:hover .dropdown-menu {
     display: block;
 }
+.navbar-toggler{
+    border:none;
+}
 .navbar-toggler:focus, .navbar-toggler:active{
     box-shadow: none;
     background-color: transparent;!important;
 }
-
+ #closeButtonRight:focus, #closeButtonRight:active{
+    background-color: transparent; !important;
+    box-shadow: none;
+}
 .dropdown-item:hover{
     background-color: red;
     border-color: red;
